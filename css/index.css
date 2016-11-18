@@ -1,0 +1,21 @@
+html,body{
+	height: 100%;
+}
+.fondo{
+	background-image: url(../img/mobile-1209058.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo{
+	width: 40%;
+    margin-top: 10%;
+}
+.btn-inicio{
+	position: absolute;
+    bottom: 10%;
+    margin: 0 auto;
+}
+.btn-inicio a{
+	color: #fff;
+}
