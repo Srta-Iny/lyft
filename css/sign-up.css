@@ -6,3 +6,19 @@
 	line-height: 68px;
 	margin-left: 3.14rem;
 }
+.next{
+	width: 250px;
+}
+/*Dropdown*/
+.dropdown-content {
+    min-width: 200px;
+}
+/*Boton*/
+.boton{
+	position: absolute;
+    bottom: 10%;
+    right:0;
+	left: 0;
+	transform: translateY(0);
+	margin: 0 auto;
+}
