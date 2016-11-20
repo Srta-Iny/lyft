@@ -1,6 +1,6 @@
 http://colorhunt.co/c/1504
 
-#48466D
-#3D84A8
-#46CDCF
-#ABEDD8
+#48466D/ #4a148c purple darken-4
+#3D84A8/ #7986cb indigo lighten-2
+#46CDCF /#40c4ff light-blue accent-2
+#ABEDD8 /#b2ebf2 cyan lighten-4

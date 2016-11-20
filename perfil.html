@@ -5,57 +5,64 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/favicon.png">
-	<title>Lyft</title>
+	<title>Profile - Lyft</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" href="css/sign-up.css">
+	<link rel="stylesheet" href="css/log-in.css">
 </head>
 <body class="fondo">
 	<header>
 		<div class="container">
 			<div class="row">
 				<div class="col s2">
-					<i class="material-icons icono"><a href="codigo.html">chevron_left</a></i>
+					<i class="material-icons icono"><a href="index.html">chevron_left</a></i>
 				</div>
 				<div class="col s10">
-					<h4 class="titulo">Sign up</h4>
-				</div>
-				<div class="col s12 center-align">
-					<p>Join now fot free ride credit</p>
+					<h4 class="titulo">My profile</h4>
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="divider"></div>
+	<section>						<!-- info perfil-->
+		<div class="container">	
+			<div class="row pad">
+	            <div class="col s3">
+	            	<img src="img/perfil-img/perfil.jpg" alt="" class="z-depth-2 circle responsive-img"> <!-- notice the "circle" class -->
+	            </div>
+	            <div class="col s9">
+	              	<span class="purple-text text-darken-4 nombre">
+	              		Barbara Williams
+	            	</span>
+	            	<span class="black-text">
+	              		barb@gmail.com
+	            	</span>
+	            </div>
+	        </div>
+        </div>
+	</section>
+	<div class="divider"></div>
+		<div class="center-align">
+			<i class="material-icons">star_border</i>
+			<i class="material-icons">star_border</i>
+			<i class="material-icons">star_border</i>
+			<i class="material-icons">star_border</i>
+			<i class="material-icons">star_border</i>
+		</div>
+	<div class="divider"></div>
+<!--boton next-->
 	<section>
 		<div class="container">
 			<div class="row">
-				<form class="col s12">
-					<div class="row">
-						<div class="input-field col s6">
-							<input id="first_name" type="text" class="validate">
-							<label for="first_name">First Name</label>
-						</div>
-						<div class="input-field col s6">
-							<input id="last_name" type="text" class="validate">
-							<label for="last_name">Last Name</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input id="email" type="email" class="validate">
-							<label for="email">Email</label>
-						</div>
-					</div>
-					<div  class="center-align">
-						<a class="waves-effect waves-light btn-large  boton">Next</a>
-					</div>
-				</form>
+				<div  class="center-align">
+					<a class="waves-effect waves-light btn-large boton" href="map.html">Next</a>
+				</div>
 			</div>
 		</div>
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
-	<script src="js/sign-up.js"></script>
+	<script src="js/log-in.js"></script>
 </body>
 </html>

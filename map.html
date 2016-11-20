@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<title>Map - Lyft</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/sign-up.css">
+	<link rel="stylesheet" href="css/log-in.css">
+</head>
+<body class="fondo">
+	<section>
+		<div id="modal1" class="modal">
+			<div class="modal-content center-align">
+				<h6>Verification code</h6>
+					<div>LAB-123</div>
+				</div>
+			<div class="modal-footer">
+				<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div>
+	</section>
+	<section>						<!-- info perfil-->
+		<div id="map"></div>
+	</section>
+<!--boton next-->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div  class="center-align">
+					<a class="waves-effect waves-light btn-large boton" href="">Set pickup</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWTpKKXkEdczn9okbqfkAtpKXcp-ABcVw&signed_in=true&callback=initMap"
+        async defer></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/log-in.js"></script>
+</body>
+</html>
