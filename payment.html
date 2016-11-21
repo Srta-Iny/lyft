@@ -13,7 +13,13 @@
 <body class="fondo">
 <!--boton next-->
 	<header>
-		<h5>Payment</h5>
+		<div class="container">
+			<div class="row">
+				<div class="col s4 offset-s4">
+					<h5>Payment</h5>
+				</div>
+			</div>
+		</div>  
 	</header>
 <!-- informacion del conductor-->
 	<section>
@@ -21,25 +27,45 @@
 			<div class="row">
 				<div class="col s4 offset-s4">
 				<!--avatar chofer-->
-					<img src="img/perfil-img/perfil.jpg" alt="" class="z-depth-2 circle responsive-img">
+					<img src="img/chofer.jpg" alt="" class="z-depth-2 circle responsive-img">
 				</div>
 				<!-- propina -->
 				<div class="col s12">
 					<ul class="valign-wrapper">
-						<li class="valign">No tip</li>
-						<li class="valign">$1</li>
-						<li class="valign">$2</li>
-						<li class="valign">$5</li>
-						<li class="valign">Other</li>
+						<li class="btn valign">No tip</li>
+						<li class="btn valign">$1</li>
+						<li class="btn valign">$2</li>
+						<li class="btn valign">$5</li>
 					</ul>
-					<form action="#">
-						<i class="material-icons">credit_card</i>
-						<span>Credit card</span>
-						<span>**1234</span>
-						<input type="checkbox" id="indeterminate-checkbox" />
-						<label for="indeterminate-checkbox"></label>
-					</form>
-					<div>
+				</div>
+				<div class="col s12">
+					<table>
+						<thead>
+							<tr class="hidden">
+								<th data-field="id">Name</th>
+								<th data-field="name">Item Name</th>
+								<th data-field="price">Item Price</th>
+						    </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<i class="material-icons">credit_card</i>
+								</td>
+								<td>
+									<span>Credit card</span>
+									<span class="right-align">**1234</span>
+								</td>
+								<td>
+									<input type="checkbox" id="indeterminate-checkbox" />
+									<label for="indeterminate-checkbox"></label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col s12">
+					<div class="center-align">
 						$ 4.00
 					</div>
 				</div>
@@ -52,7 +78,7 @@
 			<div class="row">
 				<div class="col s12">
 					<div  class="center-align">
-						<a class="waves-effect waves-light btn-large boton" href="map.html">Pay</a>
+						<a class="waves-effect waves-light btn-large boton" href="perfil.html">Pay</a>
 					</div>
 				</div>
 			</div>
