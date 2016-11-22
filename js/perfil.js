@@ -3,4 +3,3 @@ $(document).ready(function(){
 	$('.modal').modal();
 	
 });
-// callback validador 

@@ -12,9 +12,13 @@ html,body{
     margin-top: 10%;
 }
 .btn-inicio{
-	position: absolute;
+	position: fixed;
+	z-index: 2;
     bottom: 10%;
-    margin: 0 auto;
+    right:0;
+	left: 0;
+	transform: translateY(0);
+	margin: 0 auto;
 }
 .btn-inicio a{
 	color: #fff;

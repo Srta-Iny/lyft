@@ -15,7 +15,8 @@
 }
 /*Boton*/
 .boton{
-	position: absolute;
+	position: fixed;
+	z-index: 2;
     bottom: 0;
     right:0;
 	left: 0;
