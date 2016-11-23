@@ -38,8 +38,10 @@ $(document).ready(function validarCodigo(){
 $(document).ready(function datosPerfil(){
 	$('#addPerfil').click(function(){
 		var nombre = $('#icon_prefix').val();
-		var apellido = $('#last_name').val;
+		var apellido = $('#apellido').val();
 		var correo = $('#email').val();
+		var expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		console.log(correo);
 		//obteniendo nombre
 		if( nombre == null || nombre.length == 0){
 			var $toastContent = $('<span> Campo obligatorio, ingresa nombre </span>');
@@ -49,20 +51,18 @@ $(document).ready(function datosPerfil(){
 			var $toastContent = $('<span>Ingresa solo letras</span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
-		}
-		// obtener apellido
-		if( apellido == null || apellido.length == 0){
-			var $toastContent = $('<span> Campo obligatorio, ingresa nombre </span>');
+		}else if (nombre.match(/[^a-zA-Z]+/g)){
+
+		}else if( apellido == null || apellido.length == 0){
+			console.log(apellido);
+			var $toastContent = $('<span> Campo obligatorio, ingresa apellido </span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}else if (apellido.match(/[^a-zA-Z]+/g)){
 			var $toastContent = $('<span>Ingresa solo letras</span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
-		}
-		//obteniendo correo
-		var expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		if(  correo == null ||  correo.length == 0 || /^\s+$/.test(correo)){
+		}else if(  correo == null ||  correo.length == 0 || /^\s+$/.test(correo)){
 			var $toastContent = $('<span> Campo obligatorio, por favor ingresa tu correo </span>').fadeOut(3000);
 			Materialize.toast($toastContent, 2000);
 			return false;
@@ -71,20 +71,22 @@ $(document).ready(function datosPerfil(){
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}
-		if( $('#filled-in-box').not(":checked").length){
+		else if( $('#filled-in-box').not(":checked").length){
 			console.log($('#filled-in-box').val());
 			var $toastContent = $('<span>Acepta los terminos de uso</span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}
-		guardarStorageUsuario(nombre, correo);
+		guardarStorageUsuario(nombre, apellido, correo);
 		return true;
 	});
 });
 
-function guardarStorageUsuario(a, b){
+function guardarStorageUsuario(a, b, c){
     var nombre = a;
-    var correo = b;
+    var apellido = b;
+    var correo = c;
 	localStorage.setItem('nombreUser', nombre);
+	localStorage.setItem('apellidoUser',apellido);
 	localStorage.setItem('emailUser', correo);
 }
