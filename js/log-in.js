@@ -9,3 +9,8 @@ $(document).ready(function nuevoUser() {
 		} return true;
 	});
 });
+$(document).ready(function estrellitas(){
+	$('.star').click(function(){
+		$(this).toggleClass("grey-text yellow-text");
+	});
+});

@@ -50,7 +50,7 @@ $(document).ready(function editarPerfil(){
 			return false;
 		}
 		guardarStorageUsuario(newName, newApellido, newCorreo);
-		var botonA = $('#aceptar');
+		location.reload();
 		return true;
 	});
 });
