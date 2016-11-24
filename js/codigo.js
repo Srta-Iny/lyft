@@ -48,18 +48,16 @@ $(document).ready(function datosPerfil(){
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}else if (nombre.match(/[^a-zA-Z]+/g)){
-			var $toastContent = $('<span>Ingresa solo letras</span>');
+			var $toastContent = $('<span>Ingresa solo letras en el nombre</span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
-		}else if (nombre.match(/[^a-zA-Z]+/g)){
-
 		}else if( apellido == null || apellido.length == 0){
 			console.log(apellido);
 			var $toastContent = $('<span> Campo obligatorio, ingresa apellido </span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}else if (apellido.match(/[^a-zA-Z]+/g)){
-			var $toastContent = $('<span>Ingresa solo letras</span>');
+			var $toastContent = $('<span>Ingresa solo letras en el apellido</span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}else if(  correo == null ||  correo.length == 0 || /^\s+$/.test(correo)){
