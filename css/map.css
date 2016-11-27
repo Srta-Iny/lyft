@@ -1,6 +1,11 @@
 #map{
 	min-height: 500px;
 }
+#origin-input,
+#destination-input {
+	background-color: #fff;
+	padding-left: 2%;
+}
 /*botonera propina*/
 .btn{
 	padding: 0 1.5rem;
@@ -11,8 +16,8 @@
 }
 .boton{
 	position: fixed;
-    bottom: 0;
-    right:0;
+	bottom: 0;
+	right:0;
 	left: 0;
 	transform: translateY(0);
 	margin: 0 auto;
@@ -20,8 +25,11 @@
 
 /*payment css*/
 .hidden{
-    display: none;
+	display: none;
 }
 .bord-card{
 	border:1px solid #e0e0e0;
+}
+.color{
+	
 }
