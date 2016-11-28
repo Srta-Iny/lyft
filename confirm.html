@@ -46,12 +46,18 @@
 							<input id="email" type="email" class="validate" maxlength="50" length="50">
 							<label for="email" data-error="wrong" data-success="right">Email</label>
 						</div>
+						<div class="input-field col s12" autocomplete="on">
+							<i class="material-icons prefix">credit_card</i>
+							<input id="cc-number" type="tel" class="cc-number" autocomplete="cc-number"  placeholder="•••• •••• •••• ••••" required>
+	            			<label for="cc-number">Card number <small class="text-muted">[<span class="cc-brand"></span>]</small></label>
+						</div>
 						<div class="input-field col s12">
 						    <input type="checkbox" class="filled-in" id="filled-in-box"/>
 						    <label for="filled-in-box">I agree to Lift's <a href="">Terms of Service</a></label>
 					    </div>
+
 						<div  class="center-align">
-							<a id="addPerfil" class="waves-effect waves-light btn-large  boton" href="map.html">Next</a>
+							<a id="addPerfil" class="waves-effect waves-light btn-large  boton" >Next</a>
 						</div>
 					</div>
 				</form>
@@ -60,6 +66,7 @@
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/jquery.payment.js"></script>
 	<script src="js/codigo.js"></script>
 </body>
 </html>

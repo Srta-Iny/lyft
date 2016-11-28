@@ -13,6 +13,26 @@
 <body class="fondo">
 <!--boton next-->
 	<header>
+		<ul id="slide-out" class="side-nav">
+	    	<li>
+	    		<div class="userView">
+	      		<div class="background">
+	        		<img src="img/mobile-1209058.jpg">
+	      		</div>
+			      	<a href="#!user"><img class="circle" src="img/perfil-img/perfil.jpg"></a>
+			      	<span class="white-text name" id="name"></span>
+			      	<span class="white-text email" id="email"></span>
+			    </div>
+			</li>
+		    <li><a href="perfil.html"><i class="material-icons">account_circle</i>My profile</a></li>
+		    <li><a href="">Second Link</a></li>
+		    <li><div class="divider"></div></li>
+		    <li><a class="subheader">Payment Methods </a></li>
+		    <li><i class="material-icons icon-dos">credit_card</i>Credit card</li>
+		    <li><i class="material-icons icon-dos">attach_money</i>Cash</li>
+		    <li><i class="material-icons icon-dos">new_releases</i>News</li>
+  		</ul>
+  		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		<div class="container">
 			<div class="row">
 				<div class="col s4 offset-s4">
@@ -47,30 +67,9 @@
 					</ul>
 				</div>
 				<div class="col s12">
-					<table>
-						<thead>
-							<tr class="hidden">
-								<th data-field="id">Name</th>
-								<th data-field="name">Item Name</th>
-								<th data-field="price">Item Price</th>
-						    </tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<i class="material-icons">credit_card</i>
-								</td>
-								<td>
-									<span>Credit card</span>
-									<span class="right-align">**1234</span>
-								</td>
-								<td>
-									<input type="checkbox" id="indeterminate-checkbox" />
-									<label for="indeterminate-checkbox"></label>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div id="mpago">
+						
+					</div>
 				</div>
 				<div class="col s12">
 					<div class="center-align">
@@ -94,6 +93,6 @@
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
-	<script src="js/log-in.js"></script>
+	<script src="js/payment.js"></script>
 </body>
 </html>

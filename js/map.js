@@ -26,7 +26,7 @@ function initMap() {
 			title: 'Hello World!'
 			})
 		}, function() {
-			alert('error');
+			alert('error, turn on gps');
 		});
 	} else {
 		// Browser doesn't support Geolocation

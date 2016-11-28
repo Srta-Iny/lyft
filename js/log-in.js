@@ -18,26 +18,15 @@ $(document).ready(function nuevoUser() {
 	    draggable: true // Choose whether you can drag to open on touch screens
     	}
   	);
+  	//obtener datos del usuario para actualizar perfil
+	var nombreUser = localStorage.getItem('nombreUser');
+	var apellidoUser = localStorage.getItem('apellidoUser');
+	var correoUser = localStorage.getItem('emailUser');
+	//contendores 
+	var  nameContainer = $('#name');
+	var emailContainer = $('#email');
+	// asignado valores 
+	nameContainer.append(nombreUser+" "+apellidoUser);
+	emailContainer.append(correoUser);
 });
-//menu collapse
-
-// PAYMENT
-// estrellitas
-$(document).ready(function estrellitas(){
-	$('.star').click(function(){
-		$(this).toggleClass("grey-text yellow-text");
-	});
-});
-// valor carrera
-$(document).ready(function calcularCarrera(){
-	var viaje = $('#viaje');
-	valor = parseInt(localStorage.getItem('valorCarrera'));
-	viaje.html('$ ' + valor);
-	// sumar propina
-	$('#propina li').click(function(){
-		var tip= $(this).data('value');
-		var suma = valor + tip;
-		viaje.html('$ ' + suma);
-	});
-
-});
+//menu collapse;

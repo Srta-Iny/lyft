@@ -6,6 +6,15 @@
 	background-color: #fff;
 	padding-left: 2%;
 }
+/*sidenav*/
+.icon-dos{
+	float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 32px 0 10px;
+    width: 24px;
+    color: rgba(0,0,0,0.54);
+}
 /*botonera propina*/
 .btn{
 	padding: 0 1.5rem;
@@ -32,4 +41,22 @@
 }
 .color{
 	
+}
+.caja{
+	display: inline-block;
+	margin: 0 2%;
+}
+.icon{
+	float: left;
+    height: 48px;
+    margin: 0 32px 0 0;
+    width: 24px;
+    color: rgba(0,0,0,0.54);
+}
+#viaje{
+    font-size: 20px;
+    margin: 5% 0;
+}
+#mpago{
+	margin: 5% 0;
 }

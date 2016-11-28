@@ -5,12 +5,21 @@ $(document).ready(function(){
 	var nombreUser = localStorage.getItem('nombreUser');
 	var apellidoUser = localStorage.getItem('apellidoUser');
 	var correoUser = localStorage.getItem('emailUser');
+	var tarjeta = localStorage.getItem('creditCard');
+	var tipo = localStorage.getItem('typeCard');
+
+	var icono = $('<div class="icon"><i class="material-icons icon">credit_card</i></div>');
 //contendores 
 	var  nameContainer = $('#nombre');
 	var emailContainer = $('#correo');
+	var cardContainer = $('#tarjeta');
+	var caja = $('<div class="caja"></div>');
 // asignado valores 
 	nameContainer.append(nombreUser+" "+apellidoUser);
 	emailContainer.append(correoUser);
+	caja.html(tipo + " "+ " n° " + tarjeta);
+	cardContainer.append(caja);
+	cardContainer.prepend(icono);
 });
 // cambiar datos perfil 
 $(document).ready(function editarPerfil(){
@@ -62,4 +71,3 @@ function guardarStorageUsuario(a, b, c){
 	localStorage.setItem('apellidoUser',apellido);
 	localStorage.setItem('emailUser', correo);
 }
-		
