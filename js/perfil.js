@@ -71,3 +71,22 @@ function guardarStorageUsuario(a, b, c){
 	localStorage.setItem('apellidoUser',apellido);
 	localStorage.setItem('emailUser', correo);
 }
+
+// editar foto de perfil
+
+$(document).ready(function(){
+    $('#subir').click(function(){
+        var fotoSeleccionada = $('#input').get(0).files[0];
+        var reader  = new FileReader();
+        var guardado;
+        reader.onloadend = function () {
+            imgData = reader.result;
+            $('#foto').attr('src', imgData);
+            guardado = localStorage.setItem('fotoData', imgData)
+
+        }
+        reader.readAsDataURL(fotoSeleccionada);
+    });
+    imgData = localStorage.getItem('fotoData');
+    $('#foto').attr('src', imgData);
+});

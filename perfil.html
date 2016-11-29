@@ -52,6 +52,26 @@
 		    </div>
 		</div>
 	</section>
+<!-- Modal foto -->
+	<section>
+		<div id="editPerfil" class="modal">
+			<form action="#">
+			    <div class="file-field input-field">
+			    	<div class="btn">
+			        	<span>File</span>
+			        	<input type="file" id="input" accept="image/*">
+			      	</div>
+			      	<div class="file-path-wrapper">
+			        	<input class="file-path validate" type="text">
+			      	</div>
+			    </div>
+			</form>
+			<div class="modal-footer">
+		    	<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+		    	<a href="#!" class=" modal-action waves-effect waves-green btn-flat" id="subir" name="action"><i class="material-icons right">cloud_upload</i>Agree</a>
+		    </div>
+		</div>
+	</section>
 <!-- Header -->
 	<header>		
 		<div class="container">
@@ -71,7 +91,7 @@
 		<div class="container"> 
 			<div class="row pad">
 				<div class="col s3">
-					<img src="img/perfil-img/perfil.jpg" alt="" class="z-depth-2 circle responsive-img"> <!-- notice the "circle" class -->
+					<img id="foto" src="img/perfil-img/perfil.png" alt="" class="z-depth-2 circle responsive-img" data-target="editPerfil"> <!-- notice the "circle" class -->
 				</div>
 				<div class="col s9">
 					<span class="purple-text text-darken-4" id="nombre"></span>

@@ -1,4 +1,6 @@
-$(document).ready(function nuevoUser() {
+
+$(document).ready(function nuevoUser(){
+	//confirmar usuario
 	$('#login').click(function(){
 		var phone = $('#icon_telephone').val();
 		var telefono = localStorage.getItem('tel');
@@ -14,11 +16,12 @@ $(document).ready(function nuevoUser() {
 	var nombreUser = localStorage.getItem('nombreUser');
 	var apellidoUser = localStorage.getItem('apellidoUser');
 	var correoUser = localStorage.getItem('emailUser');
-	//contendores 
+	var imgData = localStorage.getItem('fotoData');
+    //contendores 
 	var  nameContainer = $('#name');
 	var emailContainer = $('#email');
 	// asignado valores 
+	$('#foto').attr('src', imgData);
 	nameContainer.append(nombreUser+" "+apellidoUser);
 	emailContainer.append(correoUser);
 });
-//menu collapse;

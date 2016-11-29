@@ -23,7 +23,8 @@ function initMap() {
 			var marker = new google.maps.Marker({
 			position: centro,
 			map: map,
-			title: 'Hello World!'
+			draggable:true,
+			title:"Drag me!"
 			})
 		}, function() {
 			alert('error, turn on gps');
@@ -160,10 +161,11 @@ function callback(response, status) {
 				var from = origins[i];
 				var to = destinations[j];
 				// ingresar datos al modal 
-				outputDiv.empty().html('travel '+ distance + ' in ' + duration);
+				outputDiv.empty().html('<i class="material-icons ico">directions_car</i>'+ 'travel '+ distance + '<br>'+ '<i class="material-icons ico">timer</i>' +'in ' + duration);
 				// calculo costo carrera 
-				calculo = (((element.distance.value*130)/200)+200).toFixed();
-				costo.empty().html('The value of the trip is: '+'$ ' + calculo);
+				calculo = (((element.distance.value*0.20)/200)+0.30).toFixed();
+				console.log( calculo);
+				costo.empty().html('The value of the trip is: '+'$ ' + calculo + ' usd');
 			}
 		}
 		

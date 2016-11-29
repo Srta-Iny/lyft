@@ -1,10 +1,19 @@
 #map{
-	min-height: 500px;
+	min-height: 600px;
 }
 #origin-input,
 #destination-input {
 	background-color: #fff;
 	padding-left: 2%;
+}
+.ico{
+	float: left;
+    height: 20px;
+    width: 24px;
+    color: rgba(0,0,0,0.54);
+}
+#output{
+	margin: 0 0 12px 0;
 }
 /*sidenav*/
 .icon-dos{

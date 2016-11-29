@@ -6,10 +6,12 @@ $(document).ready(function() {
 	var nombreUser = localStorage.getItem('nombreUser');
 	var apellidoUser = localStorage.getItem('apellidoUser');
 	var correoUser = localStorage.getItem('emailUser');
+	imgData = localStorage.getItem('fotoData');
 	//contendores 
 	var  nameContainer = $('#name');
 	var emailContainer = $('#email');
 	// asignado valores 
+	$('#foto').attr('src', imgData);
 	nameContainer.append(nombreUser+" "+apellidoUser);
 	emailContainer.append(correoUser);
 });
@@ -24,12 +26,12 @@ $(document).ready(function estrellitas(){
 $(document).ready(function calcularCarrera(){
 	var viaje = $('#viaje');
 	valor = parseInt(localStorage.getItem('valorCarrera'));
-	viaje.html('$ ' + valor);
+	viaje.html('$ ' + valor + ' usd');
 	// sumar propina
 	$('#propina li').click(function(){
 		var tip= $(this).data('value');
 		var suma = valor + tip;
-		viaje.html('$ ' + suma);
+		viaje.html('$ ' + suma + ' usd');
 	});
 
 });
