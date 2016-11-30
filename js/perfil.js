@@ -50,11 +50,11 @@ $(document).ready(function editarPerfil(){
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}else if( newCorreo == null ||  newCorreo.length == 0 || /^\s+$/.test(newCorreo)){
-			var $toastContent = $('<span> Campo obligatorio, por favor ingresa tu correo </span>').fadeOut(3000);
+			var $toastContent = $('<span> Campo obligatorio, por favor ingresa tu correo </span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}else if( !expr.test(newCorreo)){
-			var $toastContent = $('<span> Ingresa correo con formato valido </span>').fadeOut(3000);
+			var $toastContent = $('<span> Ingresa correo con formato valido </span>');
 			Materialize.toast($toastContent, 2000);
 			return false;
 		}
@@ -81,12 +81,14 @@ $(document).ready(function(){
         var guardado;
         reader.onloadend = function () {
             imgData = reader.result;
-            $('#foto').attr('src', imgData);
             guardado = localStorage.setItem('fotoData', imgData)
 
         }
         reader.readAsDataURL(fotoSeleccionada);
+        location.reload();
     });
-    imgData = localStorage.getItem('fotoData');
-    $('#foto').attr('src', imgData);
+    if(window.localStorage.fotoData.length > 0){
+    var img = localStorage.getItem('fotoData');
+    $('#foto').attr('src', img);
+	}
 });

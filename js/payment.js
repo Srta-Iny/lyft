@@ -11,9 +11,10 @@ $(document).ready(function() {
 	var  nameContainer = $('#name');
 	var emailContainer = $('#email');
 	// asignado valores 
-	$('#foto').attr('src', imgData);
+	
 	nameContainer.append(nombreUser+" "+apellidoUser);
 	emailContainer.append(correoUser);
+	$('#foto').attr('src', imgData);
 });
 // PAYMENT
 // estrellitas
