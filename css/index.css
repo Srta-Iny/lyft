@@ -23,3 +23,8 @@ html,body{
 .btn-inicio a{
 	color: #fff;
 }
+.row .col.s12 {
+	right:0;
+	left: 0;
+}
+
